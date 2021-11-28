@@ -1,6 +1,6 @@
 import React from "react";
 import { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
+
 import Icon from "react-hero-icon";
 
 function Header() {
@@ -50,12 +50,10 @@ function Header() {
               : "nav-items text-xs sm:flex hidden "
           }
         >
-          <Link to={"/"}>
-            {" "}
-            <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
-              Beranda
-            </div>
-          </Link>
+          <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
+            Beranda
+          </div>
+
           <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
             Paket&Harga
           </div>

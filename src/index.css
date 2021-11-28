@@ -27,3 +27,17 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
 }
+.about-container {
+  background: linear-gradient(
+    to right,
+    rgba(169, 98, 98, 0.5),
+    rgba(105, 175, 133, 0.5)
+  );
+}
+.porto-container {
+  background: linear-gradient(
+    to right,
+    rgba(169, 98, 98, 0.5),
+    rgba(105, 175, 133, 0.5)
+  );
+}

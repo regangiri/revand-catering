@@ -65,9 +65,6 @@ function Header() {
           <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
             Tentang Kami
           </div>
-          <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
-            Kontak
-          </div>
         </div>
       </header>
     );

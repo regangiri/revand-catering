@@ -5,6 +5,7 @@ import Paket from "./views/Paket";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Portofolio from "./views/Portofolio";
 import About from "./views/About";
+import Footer from "./component/Footer";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Paket />
       <Portofolio />
       <About />
+      <Footer />
     </Router>
   );
 }

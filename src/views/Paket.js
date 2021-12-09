@@ -1,6 +1,4 @@
-import homeBackground from "../assets/static/home-bg.jpg";
 import { useState, useEffect } from "react";
-import menua18 from "../assets/static/menua18.jpeg";
 
 function Paket() {
   const menu18 = [

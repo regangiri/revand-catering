@@ -1,6 +1,15 @@
 import React from "react";
 import { useState, useEffect } from "react";
-
+import {
+  Link,
+  Button,
+  Element,
+  Events,
+  animateScroll as scroll,
+  scrollSpy,
+  scroller,
+} from "react-scroll";
+import * as Scroll from "react-scroll";
 import Icon from "react-hero-icon";
 
 function Header() {
@@ -11,6 +20,10 @@ function Header() {
     setActive(!isActive);
 
     console.log(isActive);
+  };
+
+  const scrollToTop = () => {
+    scroll.scrollToTop();
   };
 
   const changeBackground = () => {
@@ -50,19 +63,29 @@ function Header() {
               : "nav-items text-xs sm:flex hidden "
           }
         >
-          <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
-            Beranda
-          </div>
+          <Link to="beranda-container" spy={true} smooth={true} duration={500}>
+            <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
+              Beranda
+            </div>
+          </Link>
 
-          <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
-            Paket&Harga
-          </div>
-          <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
-            Portofolio
-          </div>
-          <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
-            Tentang Kami
-          </div>
+          <Link to="paket-container" spy={true} smooth={true} duration={500}>
+            {" "}
+            <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
+              Paket&Harga
+            </div>
+          </Link>
+          <Link to="porto-container" spy={true} smooth={true} duration={500}>
+            <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
+              Portofolio
+            </div>
+          </Link>
+          <Link to="about-container" spy={true} smooth={true} duration={500}>
+            {" "}
+            <div className="nav-links mx-2 sm:text-xl text-white hover:text-black ">
+              Tentang Kami
+            </div>
+          </Link>
         </div>
       </header>
     );
@@ -85,21 +108,30 @@ function Header() {
               : "nav-items text-xs sm:flex hidden "
           }
         >
-          <div className="nav-links mx-2 sm:text-xl text-black hover:text-red-600 ">
-            Beranda
-          </div>
-          <div className="nav-links mx-2 sm:text-xl text-black hover:text-red-600 ">
-            Paket&Harga
-          </div>
-          <div className="nav-links mx-2 sm:text-xl text-black hover:text-red-600 ">
-            Portofolio
-          </div>
-          <div className="nav-links mx-2 sm:text-xl text-black hover:text-red-600 ">
-            Tentang Kami
-          </div>
-          <div className="nav-links mx-2 sm:text-xl text-black hover:text-red-600 ">
-            Kontak
-          </div>
+          <Link to="beranda-container" spy={true} smooth={true} duration={500}>
+            {" "}
+            <div className="nav-links mx-2 sm:text-xl text-black hover:text-red-600 ">
+              Beranda
+            </div>
+          </Link>
+          <Link to="paket-container" spy={true} smooth={true} duration={500}>
+            {" "}
+            <div className="nav-links mx-2 sm:text-xl text-black hover:text-red-600 ">
+              Paket&Harga
+            </div>
+          </Link>
+          <Link to="porto-container" spy={true} smooth={true} duration={500}>
+            {" "}
+            <div className="nav-links mx-2 sm:text-xl text-black hover:text-red-600 ">
+              Portofolio
+            </div>
+          </Link>
+          <Link to="about-container" spy={true} smooth={true} duration={500}>
+            {" "}
+            <div className="nav-links mx-2 sm:text-xl text-black hover:text-red-600 ">
+              Tentang Kami
+            </div>
+          </Link>
         </div>
       </header>
     );

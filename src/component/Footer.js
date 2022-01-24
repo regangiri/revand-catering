@@ -29,7 +29,7 @@ function Footer() {
               className="flex mt-1 items-center "
               icon="mail"
               type="solid"
-            />{" "}
+            />
             <p>revandcatering@gmail.com</p>
           </div>
           <br />

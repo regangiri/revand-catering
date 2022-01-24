@@ -22,10 +22,6 @@ function Header() {
     console.log(isActive);
   };
 
-  const scrollToTop = () => {
-    scroll.scrollToTop();
-  };
-
   const changeBackground = () => {
     if (window.scrollY >= 66) {
       setNavbar(true);

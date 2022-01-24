@@ -6,6 +6,7 @@ import Paket from "./views/Paket";
 import Portofolio from "./views/Portofolio";
 import About from "./views/About";
 import Footer from "./component/Footer";
+import ScrollToTop from "./component/ScrollToTop";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Portofolio />
       <About />
       <Footer />
+      <ScrollToTop />
     </div>
   );
 }
